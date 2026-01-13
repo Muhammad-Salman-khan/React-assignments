@@ -30,7 +30,13 @@ const ProductCard = () => {
       </div>
     );
   }
-
+  if (error) {
+    return (
+      <div className="text-center p-6">
+        <h2 className="text-zinc-900 dark:text-white mt-4">{error}</h2>
+      </div>
+    );
+  }
   return (
     <>
       <h1 className="text-center m-4 dark:text-white text-black text-4xl">

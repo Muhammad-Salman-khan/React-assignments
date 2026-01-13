@@ -1,6 +1,7 @@
 import CounterCard from "./components/UI/CounterCard";
 import Joke from "./components/UI/Joke";
 import ProductCard from "./components/UI/ProductCard.jsx";
+import ProductStock from "./components/UI/ProductStock.jsx";
 import SignupForm from "./components/UI/SignupForm";
 import Student from "./components/UI/Student";
 import TodoCard from "./components/UI/TodoCard.jsx";
@@ -8,7 +9,6 @@ import { SetTheme } from "./context/ThemeContext.jsx";
 
 const App = () => {
   const { Theme, switchTheme } = SetTheme();
-  console.log(Theme);
 
   return (
     <>
@@ -46,13 +46,16 @@ const App = () => {
         <SignupForm />
         <h1 className="text-4xl text-center text-bold">Fetch a new joke</h1>
         <Joke />
-
         <div className="max-w-6xl  m-auto mt-3">
           <ProductCard />
         </div>
         <div className="max-w-6xl  m-auto mt-12">
           <TodoCard />
         </div>
+        <h1 className="text-4xl text-center text-bold">
+          Product Card Generator
+        </h1>
+        <ProductStock />
       </div>
     </>
   );
