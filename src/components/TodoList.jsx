@@ -3,9 +3,6 @@ const TodoList = ({ tasks, line, Del, SetValue, Add, ToggleTask, value }) => {
     <>
       <div className="bg-white dark:text-white  dark:bg-stone-900 shadow-2xl rounded-2xl w-full max-w-full p-6">
         <h1 className="text-2xl font-bold text-center mb-4">📝 To-Do List</h1>
-        {tasks.map((e) => {
-          <p>{e.comp}</p>;
-        })}
         <div className="flex mb-4">
           <input
             type="text"
