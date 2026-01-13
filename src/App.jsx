@@ -34,10 +34,19 @@ const App = () => {
             </span>
           </label>
         </div>
-        <Student />
-        <CounterCard />
+        <div className="flex justify-center flex-col align-middle items-center">
+          <h1 className="text-4xl text-bold">Student Card</h1>
+          <Student />
+        </div>
+        <div className="flex justify-center flex-col align-middle items-center">
+          <h1 className="text-4xl text-bold">Counter Card</h1>
+          <CounterCard />
+        </div>
+        <h1 className="text-4xl text-center text-bold">SignUp form</h1>
         <SignupForm />
+        <h1 className="text-4xl text-center text-bold">Fetch a new joke</h1>
         <Joke />
+
         <div className="max-w-6xl  m-auto mt-3">
           <ProductCard />
         </div>
